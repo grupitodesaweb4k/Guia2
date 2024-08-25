@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Libro de Visitas</title>
+    <link rel="stylesheet" href="styles.css"> </head>
+<body>
+    <form class="form-datos" name="miformulario" action="mailto:jahir.gonz.g@gmail.com" method="post">
+        <h1>Libro de Visitas</h1>
+
+        
+        <section >
+            <h4>Datos Personales</h4>
+            <label for="nombre">Nombre:</label>
+            <input class="controls" type="text" id="nombre" name="nombre" required>
+            <section>
+                <label for="apellidos">Apellidos:</label>
+                <input class="controls" type="text" id="apellidos" name="apellidos" required>
+            </section>
+
+        </section>
+      
+        <section>
+        <h4>Indica un Pseudónimo y una contraseña</h4>
+        <label for="pseudonimo">Pseudónimo:</label>   
+        <input class="controls2" type="text" id="pseudonimo" name="pseudonimo" maxlength="16" required>
+        <label for="contrasena">Contraseña:</label>
+        <input class="controls2" type="password" id="contrasena" name="contrasena" maxlength="12" required>
+        </section>
+        <tr> 
+            <td colspan="2" align="left" height="25" valign="top"> 
+              <p></p> 
+            </td> 
+          </tr> 
+          <table>
+
+            
+            <td>
+            <p>Edad:</p>
+            <input class="radio" type="radio" id="edad1" name="edad-range" value="0-10">
+            <label for="edad1">0-10</label><br>
+    
+            <input class="radio"type="radio" id="edad2" name="edad-range" value="11-20">
+            <label for="edad2">11-20</label><br>
+    
+            <input class="radio"type="radio" id="edad3" name="edad-range" value="21-30">
+            <label for="edad3">21-30</label><br>
+    
+            <input class="radio"type="radio" id="edad4" name="edad-range" value="31-40">
+            <label for="edad4">31-40</label><br>
+    
+            <input class="radio"type="radio" id="edad5" name="edad-range" value="41+">
+            <label for="edad5">41 o más</label><br>
+            </td>
+            <td>
+                <p>¿Dónde vives?:</p>
+                
+                <input type="radio" id="lugar1" name="lugar-e" value="Palma de Mallorca">
+                <label for="lugar1">Palma de Mallorca</label><br>
+            
+                <input type="radio" id="lugar2" name="lugar-e" value="Part forna de Mallorca">
+                <label for="lugar2">Part forna de Mallorca</label><br>
+            
+                <input type="radio" id="lugar3" name="lugar-e" value="Menorca">
+                <label for="lugar3">Menorca</label><br>
+            
+                <input type="radio" id="lugar4" name="lugar-e" value="Eivissa o Formentera">
+                <label for="lugar4">Eivissa o Formentera</label><br>
+            
+                <input type="radio" id="lugar5" name="lugar-e" value="Otro">
+                <label for="lugar5">Otro:</label>
+                <input class="more" type="text" id="Otro" name="Otro" ><br>
+            </td>
+            <td>
+                <p>Aficiones:</p>
+                
+                <input  type="checkbox" id="musica" name="musica" value="Música">
+                <label for="musica">Música</label><br>
+            
+                <input type="checkbox" id="deportes" name="deportes" value="Deportes">
+                <label for="deportes">Deportes</label><br>
+            
+                <input type="checkbox" id="pintura" name="pintura" value="Pintura">
+                <label for="pintura">Pintura</label><br>
+            
+                <input type="checkbox" id="lectura" name="lectura" value="Lectura">
+                <label for="lectura">Lectura</label><br>
+            
+                <input type="checkbox" id="otra" name="otra" value="Otra">
+                <label for="otra">Otra:</label>
+                <input class="more" type="text" id="Otra" name="Otra" ><br>
+            </td>
+
+
+          </table>
+
+        <input class="boton" type="submit" value="Enviar">
+        <input class="boton" type="reset" value="Restaurar">
+    </form>
+</body>
+</html>

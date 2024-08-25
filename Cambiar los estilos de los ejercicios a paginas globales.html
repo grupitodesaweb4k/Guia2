@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dos Tablas: Una con y otra sin CSS</title>
+    <style>
+        .styled-table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        .styled-table th, .styled-table td {
+            border: 1px solid #333; 
+            padding: 10px;
+        }
+
+        .styled-table th {
+            background-color: #f2f2f2;
+        }
+
+        .styled-table .nombre-producto {
+            background-color: #f2f2f2;
+            background-size: cover;
+            background-position: center;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+        }
+
+        .styled-table td.numeric:hover {
+            background-color: #FFFF66;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 style="text-align: center;">Tabla Sin CSS</h2>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nombre Producto</th>
+                <th>Venta Semana 1</th>
+                <th>Venta Semana 2</th>
+                <th>Venta Semana 3</th>
+                <th>Venta Semana 4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Pastas</td>
+                <td>125.89</td>
+                <td>159.78</td>
+                <td>130.56</td>
+                <td>116.57</td>
+            </tr>
+            <tr>
+                <td>Detergente</td>
+                <td>67.45</td>
+                <td>78.56</td>
+                <td>90.56</td>
+                <td>69.34</td>
+            </tr>
+            <tr>
+                <td>Sopas</td>
+                <td>45.67</td>
+                <td>34.45</td>
+                <td>45.89</td>
+                <td>67.80</td>
+            </tr>
+            <tr>
+                <td>Especias</td>
+                <td>17.56</td>
+                <td>18.67</td>
+                <td>15.89</td>
+                <td>13.23</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2 style="text-align: center;">Tabla Con CSS</h2>
+
+    <table class="styled-table">
+        <thead>
+            <tr>
+                <th>Nombre Producto</th>
+                <th>Venta Semana 1</th>
+                <th>Venta Semana 2</th>
+                <th>Venta Semana 3</th>
+                <th>Venta Semana 4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="nombre-producto">Pastas</td>
+                <td class="numeric">125.89</td>
+                <td class="numeric">159.78</td>
+                <td class="numeric">130.56</td>
+                <td class="numeric">116.57</td>
+            </tr>
+            <tr>
+                <td class="nombre-producto">Detergente</td>
+                <td class="numeric">67.45</td>
+                <td class="numeric">78.56</td>
+                <td class="numeric">90.56</td>
+                <td class="numeric">69.34</td>
+            </tr>
+            <tr>
+                <td class="nombre-producto">Sopas</td>
+                <td class="numeric">45.67</td>
+                <td class="numeric">34.45</td>
+                <td class="numeric">45.89</td>
+                <td class="numeric">67.80</td>
+            </tr>
+            <tr>
+                <td class="nombre-producto">Especias</td>
+                <td class="numeric">17.56</td>
+                <td class="numeric">18.67</td>
+                <td class="numeric">15.89</td>
+                <td class="numeric">13.23</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

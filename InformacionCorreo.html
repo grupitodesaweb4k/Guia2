@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <title>Formulario de Envío</title>
+    <link rel="stylesheet" href="styles.css"> </head>
+        <body>
+            <table>
+                <td>
+
+                    <form action="enviar.php" method="post" enctype="multipart/form-data"> <label for="nombre">Escribe tu nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>                
+                </td>
+                <tr>
+
+                    <td>
+                        <label for="contrasena">Introduce tu contraseña:</label>
+                        <input type="password" id="contrasena" name="contrasena" required>            
+                    </td>
+                </tr>
+                <td>
+        <label for="foto">Envíame una foto tuya:</label>
+        <input type="file" id="foto" name="foto">
+                </tr>
+                <td>
+                    <label>Este manual te parece:</label><br>
+                    <input type="radio" name="calificacion" value="muybueno"> Muy bueno <br>
+                    <input type="radio" name="calificacion" value="bueno"> Bueno <br>
+                    <input type="radio" name="calificacion" value="malo"> Malo <br>
+                    <input type="radio" name="calificacion" value="muymalo"> Muy malo <br>
+
+                </td>
+                <tr>
+
+                    <td>
+                        <input type="checkbox" name="actualizaciones" value="si"> Avisarme de actualizaciones
+    
+                    </td>
+                    <tr>
+                    <td>
+                        <button type="submit">Enviar</button>
+                        <button type="reset">Borrar</button>
+                    </td>
+                </tr>
+                </tr>
+            </table>
+
+    </form>
+</body>
+</html>
